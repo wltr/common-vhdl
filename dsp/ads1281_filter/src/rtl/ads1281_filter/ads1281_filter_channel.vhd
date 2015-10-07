@@ -61,7 +61,7 @@ begin -- architecture rtl
   ads1281_filter_fifo_inst_0 : entity work.ads1281_filter_fifo
     generic map (
       init_value_g => '0',
-      offset_g     => 0)
+      offset_g     => 2)
     port map (
       clk_i       => clk_i,
       rst_asy_n_i => rst_asy_n_i,
@@ -74,7 +74,7 @@ begin -- architecture rtl
   ads1281_filter_fifo_inst_1 : entity work.ads1281_filter_fifo
     generic map (
       init_value_g => '0',
-      offset_g     => 2)
+      offset_g     => 0)
     port map (
       clk_i       => clk_i,
       rst_asy_n_i => rst_asy_n_i,
